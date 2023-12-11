@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <hobby>
+            <general>
+                <hobby_list>{"1":{"value":"yoga","label":"Yoga"},"2":{"value":"traveling","label":"Traveling"},"3":{"value":"hiking","label":"Hiking"}}</hobby_list>
+            </general>
+        </hobby>
+    </default>
+</config>

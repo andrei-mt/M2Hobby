@@ -1,0 +1,34 @@
+<?php
+
+/** @var \Magento\Customer\Block\Form\Edit $block */
+/** @var \Magento\Framework\Escaper $escaper */
+/** @var \Magento\Framework\View\Helper\SecureHtmlRenderer $secureRenderer */
+/** @var \MT\Hobby\ViewModel\AccountHobby $viewModel */
+$viewModel = $block->getData('accountHobby');
+$hobby = $viewModel->getHobby();
+?>
+<form class="form form-edit-account form-hobby"
+      action="<?= $escaper->escapeUrl($block->getUrl('customer/hobby/editPost')) ?>"
+      method="post"
+      id="form-validate"
+      autocomplete="off">
+    <fieldset class="fieldset">
+        <?= $block->getBlockHtml('formkey') ?>
+        <div class="field choice">
+            <select name="hobby" id="hobby" class="required-entry" title="Hobby" aria-required="true">
+                <?php foreach($viewModel->getHobbiesList() as $list):  ?>
+                    <option
+                        <?php if ($hobby === $list['value']): ?>selected<?php endif; ?>
+                        value="<?=$escaper->escapeHtmlAttr($list['value'])?>"><?=$escaper->escapeHtml($list['label']); ?></option>
+                <?php endforeach; ?>
+            </select>
+        </div>
+    </fieldset>
+    <div class="actions-toolbar">
+        <div class="primary">
+            <button type="submit" class="action save primary" title="<?= $escaper->escapeHtmlAttr(__('Save')) ?>">
+                <span><?= $escaper->escapeHtml(__('Save')) ?></span>
+            </button>
+        </div>
+    </div>
+</form>

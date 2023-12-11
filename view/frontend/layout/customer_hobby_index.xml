@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="customer_account"/>
+    <body>
+        <referenceContainer name="content">
+            <block name="customer_hobby" template="MT_Hobby::form/edit.phtml" >
+                <arguments>
+                    <argument name="accountHobby" xsi:type="object">MT\Hobby\ViewModel\AccountHobby</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

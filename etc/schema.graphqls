@@ -1,0 +1,6 @@
+type Customer {
+    hobby: String @doc(description: "Customer Hobby attribute")
+}
+input CustomerUpdateInput {
+    hobby: String @doc(description: "Customer hobby")
+}

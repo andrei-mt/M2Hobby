@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="hobby" translate="label" sortOrder="40">
+            <label>Hobby</label>
+        </tab>
+        <section id="hobby" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Hobby Attribute</label>
+            <tab>hobby</tab>
+            <resource>Magento_Customer::config_customer</resource>
+            <group id="general" translate="label"  sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="hobby_list" translate="label" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Hobby</label>
+                    <frontend_model>MT\Hobby\Block\System\Config\Form\Field\Hobby</frontend_model>
+                    <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
