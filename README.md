@@ -22,10 +22,10 @@ Module that add hobby attribute to customer.
 
 Module add a custom customer attribute “Hobby“.
 - Allows to fetch / edit the attribute using GraphQL.
-<img src="https://monosnap.com/file/bVNmIxvwYfg4fhsYSgXAQiItfEWDuk" />
-![Screenshot](https://monosnap.com/file/5riDwmllHkNGFKU8VY0nUmY7ldbAli)
+<img width="1151"  src="https://github.com/andrei-mt/M2Hobby/assets/97022420/6a43df70-0426-40d2-9f77-faef1c8676ad">
+<img width="1440" src="https://github.com/andrei-mt/M2Hobby/assets/97022420/1145fb33-dca8-4b69-8140-a70ddce8a0c8">
 - Hobby options can be assigned in the admin panel.
-![Screenshot](https://monosnap.com/file/6FT5yaqlTqReBKceClEfdzENg1Kg6j)
+<img width="1371" src="https://github.com/andrei-mt/M2Hobby/assets/97022420/c82d17de-1c7f-40df-8198-fd3c8318c44e">
 - Admin and customers are able to edit the attribute value.
 - “Hobby“ appears in the top right corner of the site.
 
