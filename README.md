@@ -12,7 +12,8 @@ Module that add hobby attribute to customer.
 
 ### Type 2: Composer
 
- - Add the composer repository to the configuration by running `composer config repositories.repo.mt.module composer https://github.com/andrei-mt/M2Hobby.git`
+ - Add the composer repository to the configuration by running
+`composer config repositories.repo.mt.module vcs https://github.com/andrei-mt/M2Hobby.git`
  - Install the module composer by running `composer require mt/module-hobby`
  - enable the module by running `php bin/magento module:enable MT_Hobby`
  - apply database updates by running `php bin/magento setup:upgrade`
